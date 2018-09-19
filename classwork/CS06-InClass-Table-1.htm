@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Product List </title>
+        
+        <style type="text/css">
+        table{
+            margin-left:auto;
+            margin-right:auto;
+            border:2px solid black;
+            font-family:cursive;
+            color:black;
+            width:30%;
+            border-spacing:0;
+        }
+
+        td{
+            border:1px solid black;
+            text-align:center;
+        }
+
+        tr#top{
+            background-color:lightblue;
+            font-weight:bold;
+        }
+        th{
+            
+            border:1px solid black;
+        }
+
+        tr:hover{
+            background-color:lightcoral;
+        }
+
+        tr:nth-child(even){
+            background-color:lightgrey;
+        }
+        </style>
+
+</head>
+
+<body>
+        <table>
+            <caption>Catalog of Products</caption>
+                <tr  id="top">
+                    <th>Product Code</th>
+                    <th>Product Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>000</td>
+                    <td>Glasses</td>
+                    <td>30.00</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>Hats</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>222</td>
+                    <td>Scarves</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td id="code">333</td>
+                    <td>Gloves</td>
+                    <td>10.00</td>
+                </tr>
+        </table>
+</body>
+
+</html>
