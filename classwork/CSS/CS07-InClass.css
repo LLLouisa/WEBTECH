@@ -1,0 +1,37 @@
+table{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: Arial;
+    background-color: lightgray;
+}
+tr, td{
+    border: 1px solid black;
+    padding: 3px;
+    vertical-align: top;
+}
+img{
+    width: 100%;
+}
+td.pic{
+    width: 70%;
+    background-color: lightblue;
+}
+td#lastcolumn{
+    width:30%;
+}
+td.elephant{
+    width:35%
+}
+body{
+    background-image: url("../Images/music.gif")
+}
+p.scroll{
+    background-color:lightseagreen;
+    width: 250px;
+    height: 300px;
+    overflow: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+    opacity: 6%;
+}
