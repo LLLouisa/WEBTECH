@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>CS08-InClass - Louisa ZHONG </title>
+        <style type="text/css">
+        P{
+                color:navy;;
+        }
+
+        form{
+                font:Arial;
+                color:navy;
+                background-color:silver;
+                margin-top:50px;
+                margin-right:100px;
+                margin-bottom:50px;
+                margin-left:100px;
+                width: 500px;
+                padding:20px 50px 20px 100px;
+        }
+        
+        h1{
+                text-align:center;
+                color:navy;
+                font:Lucida Bright;
+        }
+
+        </style>
+
+</head>
+
+<body>
+        <h1>Web Forms - CS08-InClass</h1>
+
+    <form method="post" action="mailto:xzhong3@babson.edu">
+
+        <p>Last Name: <input class="more-space" type="text" name="last_name" maxlength="10" size="15">
+           First Name:<input class="more-space"  type="text" name="first_name" maxlength="10" size="15">
+        </p>
+
+        <p>Gender:Male<input type="radio" name="gender" value="M" >
+                  Female<input type="radio" name="gender" value="F">
+        </p>
+
+        <p>My favorite Web Tech topics are<br>
+            <input type="checkbox" name="Web Tech-topic" value="1"/>Basic HTML <br>
+            <input type="checkbox" name="Web Tech-topic" value="2">CSS <br>
+            <input type="checkbox" name="Web Tech-topic" value="3">Tables <br>
+            <input type="checkbox" name="Web Tech-topic" value="4">FORMS <br>
+        </p>
+
+        <p>What grade do you expect to receive?
+           <select name="grade">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+           </select>
+        </p>
+
+        <p>Please add any comments you have.<br/>
+           <textarea name="comments" rows="5" cols="29"></textarea>
+        </p>
+
+        <p>
+                <button type="submit" name="submit" value="submit"> SUBMIT <img src="Images/mailbox.png" height="30" alt="submit-button" /></button>
+                <button type="clear" name="clear" value="clear"> CLEAR <img src="Images/reset.png" height="30" alt="clear-button" /></button>
+        </P>
+
+    </form>
+</body>
+
+</html>
