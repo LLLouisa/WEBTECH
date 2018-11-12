@@ -6,41 +6,100 @@
         <title>ITSHOTPOT about </title>
 
         <style type="text/css">
+        body{
+            background-color:black;
+            color:white;
+            font-family: calibri;
+        }
+            
         h1{
             text-align: center;
         }
-        
+
+        p{
+            font-size:16px;
+            text-align:center;
+        }
+
         ul {
             list-style-type: none;
-            text-align: right;
+            text-align: center;
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
 
         li {
             display: inline;
         }
 
+        li a{
+            color:white;
+            text-decoration: none;
+            padding:5px 5px;
+        }
+
+        li a:hover{
+            background-color: burlywood;
+        }
+
+        #welcome{
+            font-size:3em;
+        }
+
+        #louisa{
+            font-size:2em;
+            text-align:center;
+            padding-top:15px;
+            color:burlywood;
+        }
+
+        #image{
+            width:280px;
+            float:right;
+            padding-top:5px;
+            padding-left:20px;
+        }
+
+        div#part{
+            padding: 10px 300px 30px 300px;
+            line-height: 1.6;
+        }
+
+        #des{
+            text-align:left;
+        }
+
         </style>
 </head>
 
 <body>
-    <h1> WELCOME TO THE HOTPOT VENTURE</h1>
-    <hr>
+    <div>
+        <h1 id="welcome"> WELCOME TO THE HOTPOT VENTURE</h1>
+        <hr color="burlywood">
+                    
+        <ul>
+            <li><a href="index.htm">HOME</a></li>
+            <li><a href="recipe.htm">RECIPE</a></li>
+            <li><a href="restaurant.htm">RESTAURANTS</a></li>
+            <li><a href="contact.htm">CONTACT</a></li>
+            <li><a href="about.htm">ABOUT</a></li>
+            <li><a href="sitemap.htm">SITEMAP</a></li>
+        </ul>
+                    
+        <hr color="burlywood">
+    </div>
 
-    <ul>
-        <li><a href="index.htm">HOME</a></li>
-        <li><a href="recipe.htm">RECIPE</a></li>
-        <li><a href="restaurant.htm">RESTAURANTS</a></li>
-        <li><a href="contact.htm">CONTACT</a></li>
-        <li><a href="about.htm">ABOUT</a></li>
-        <li><a href="sitemap.htm">SITEMAP</a></li>
-    </ul>
+    <h1 id="louisa">About Louisa</h1>
 
-<p>This is Louisa! Born and raised in the hot pot city Chongqing, I am a foodie and enjoy different cuisines all over the world. Among all dishes, my favorite one is authentic spicy hotpot!!!
-Welcome to join the venture with me to explore more about hotpot. You will find what you have to know about hotpot through itshotpot.com!
-Ready? The hotpot venture begins now…</p>
-<img src="Images/selfie.png" alt="selfie" title="selfie">
+    <div id="part">
+        <img id="image" src="Images/selfie.png" alt="selfie" title="selfie">
+        <p id="des">
+            This is Louisa! <br>
+            Born and raised in the hot pot city "Chongqing", I regarded myself as a foodie and enjoy different cuisines all over the world. Among all dishes, my favorite one is authentic spicy hotpot!!!<br>
+            Welcome to join the venture with me to explore more about hotpot. You will find fun stuff about hotpot through itshotpot.com! <br>
+            Ready? The hotpot venture begins now…</p>
+    </div>
 
 </body>
 

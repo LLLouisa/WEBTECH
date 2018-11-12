@@ -6,101 +6,134 @@
         <title>ITSHOTPOT restaurants</title>
 
         <style type="text/css">
+        body{
+            background-color:black;
+            color:white;
+            font-family: calibri;
+        }
+            
         h1{
             text-align: center;
         }
-        
+
+        p{
+            text-align: center;
+        }
+
         ul {
             list-style-type: none;
-            text-align: right;
+            text-align: center;
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
 
         li {
             display: inline;
         }
 
+        li a{
+            color:white;
+            text-decoration: none;
+            padding:5px 5px;
+        }
+
+        li a:hover{
+            background-color: burlywood;
+        }
+
+        #welcome{
+            font-size:3em;
+        }
+
+        #restaurant{
+            font-size:2em;
+            text-align:center;
+            padding-top:15px;
+            color:burlywood;
+        }
+
+        table{
+            margin: 50px auto 30px auto;
+        }
+
+        td{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        a#customer{
+            color:white;
+            text-decoration: underline;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        a#customer:hover{
+            background-color: darkred;
+        }
+
         </style>
 </head>
 
 <body>
-    <h1> WELCOME TO THE HOTPOT VENTURE</h1>
-    <hr>
-
-    <ul>
-        <li><a href="index.htm">HOME</a></li>
-        <li><a href="recipe.htm">RECIPE</a></li>
-        <li><a href="restaurant.htm">RESTAURANTS</a></li>
-        <li><a href="contact.htm">CONTACT</a></li>
-        <li><a href="about.htm">ABOUT</a></li>
-        <li><a href="sitemap.htm">SITEMAP</a></li>
-    </ul>
-
     <div>
-      <h3> Hotpot Restaurant in Boston</h3>
-
-      <table>
-        <tr>
-          <td style="margin-left:40px">
-              <img src="Images/Koi.png" alt="Koi Restaurant" title="Koi Restaurant" width="250" height="250"/>
-              <ul>
-                <li>Koi Restaurant</li>
-                <ul>
-                <li>Phone:(617) 689-0088 </li>
-                <ul>
-                <li>Address:21 Beale St, Quincy, MA 02170</li>
-                </ul>
-                </ul>
-            </ul>
-
-          </td>
-          <td style="margin-left:40px">
-              <img src="Images/Q.png" alt="Q Restaurant" title="Q Restaurant" width="250" height="250"/>
-              <ul>
-                <li>Q Restaurant</li>
-                <ul>
-                <li>Phone:(857) 350-3968 </li>
-                <ul>
-                <li>Address:660 Washington St, Boston, MA 02111</li>
-                </ul>
-                </ul>
-            </ul>
-          </td>
-
-          <td style="margin-left:40px">
-              <img src="Images/Happylamb.png" alt="Happy Lamb" title="Happy Lamb" width="250" height="250"/>
-              <ul>
-                <li>Happy Lamb Hotpot</li>
-                <ul>
-                <li>Phone:(857) 285-6933</li>
-                <ul>
-                <li>Address:485 Massachusetts Ave, Cambridge, MA 02139</li>
-                </ul>
-                </ul>
-            </ul>
-
-          </td>
-          <td style="margin-left:40px">
-              <img src="Images/Royal.png" alt="Royal Hotpot" title="Royal Hotpot" width="250" height="250"/>
-              <ul>
-                <li>Royal Hotpot</li>
-                <ul>
-                <li>Phone:(617) 481-4874 </li>
-                <ul>
-                <li>Address:227 Parkingway, Quincy, MA 02169</li>
-                </ul>
-                </ul>
-            </ul>
-          </td>
-        </tr>
-      </table>
-
+        <h1 id="welcome"> WELCOME TO THE HOTPOT VENTURE</h1>
+        <hr color="burlywood">
+                    
+        <ul>
+            <li><a href="index.htm">HOME</a></li>
+            <li><a href="recipe.htm">RECIPE</a></li>
+            <li><a href="restaurant.htm">RESTAURANTS</a></li>
+            <li><a href="contact.htm">CONTACT</a></li>
+            <li><a href="about.htm">ABOUT</a></li>
+            <li><a href="sitemap.htm">SITEMAP</a></li>
+        </ul>
+                    
+        <hr color="burlywood">
     </div>
+
+    <h1 id="restaurant"> Hotpot Restaurants in Boston Area</h1>
+
+    <table>
+        <tr>
+            <td><img src="Images/koi.png" alt="Koi" title="Koi" width="350" height="350"/>
+                <ul class="aaa">
+                    <li style="font-weight:bold; font-style:italic; color:burlywood; font-size:1.5em">Koi Hot Pot Restaurant</li><br>
+                    <li>Phone:(617) 689-0088</li><br>
+                    <li>Address:21 Beale St, <br> Quincy, MA 02170</li>
+                </ul>
+            </td>
+
+            <td><img src="Images/Q.png" alt="Q" title="Q" width="350" height="350"/>
+                <ul>
+                    <li style="font-weight:bold; font-style:italic; color:burlywood; font-size:1.5em">Q Restaurant</li><br>
+                    <li >Phone:(857) 350-3968</li><br>
+                    <li>Address:660 Washington St, <br> Boston, MA 02111</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td><img src="Images/Happylamb.png" alt="Happylamb" title="Happylamb" width="350" height="350"/>
+                <ul>
+                    <li style="font-weight:bold; font-style:italic; color:burlywood; font-size:1.5em">Happy Lamb Hotpot</li><br>
+                    <li>Phone:(857) 285-6933</li><br>
+                    <li>Address:485 Massachusetts Ave, <br> Cambridge, MA 02139</li>
+                </ul>
+            </td>
     
-    <a href="Customer.htm" style="font-size:20px;font-family:cursive">Tell us more about you!</a>
-
-
+            <td><img src="Images/royal.png" alt="Royal" title="Royal" width="350" height="350"/>
+                <ul>
+                    <li style="font-weight:bold; font-style:italic; color:burlywood; font-size:1.5em">Royal Hotpot</li><br>
+                    <li>Phone:(617) 481-4874</li><br>
+                    <li>Address:227 Parkingway, <br> Quincy, MA 02169</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>

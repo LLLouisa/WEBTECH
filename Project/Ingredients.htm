@@ -5,19 +5,61 @@
         <title>ITSHOTPOT recipe </title>
 
         <style type="text/css">
+        body{
+            background-color:black;
+            color:white;
+            font-family: calibri;
+        }
+            
         h1{
             text-align: center;
         }
-            ul {
-                list-style-type: none;
-                text-align: right;
-                margin: 0;
-                padding: 0;
-            }
 
-            li {
-                display: inline;
-            }
+        p{
+            text-align: center;
+            font-size:30px;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a{
+            color:white;
+            text-decoration: none;
+            padding:5px 5px;
+        }
+
+        li a:hover{
+            background-color: burlywood;
+        }
+
+        #welcome{
+            font-size:3em;
+        }
+
+        #ingredients{
+            font-size:2em;
+            text-align:center;
+            padding-top:15px;
+            color:burlywood;
+        }
+
+        table{
+            margin: 30px auto 30px auto;
+        }
+
+        td{
+            text-align: center;
+        }
 
 
         </style>
@@ -25,47 +67,109 @@
 </head>
 
 <body>
-    <h1> WELCOME TO THE HOTPOT VENTURE</h1>
-    <hr>
-
-    <ul>
-        <li><a href="index.htm">HOME</a></li>
-        <li><a href="recipe.htm">RECIPE</a></li>
-        <li><a href="restaurant.htm">RESTAURANTS</a></li>
-        <li><a href="contact.htm">CONTACT</a></li>
-        <li><a href="about.htm">ABOUT</a></li>
-        <li><a href="sitemap.htm">SITEMAP</a></li>
-    </ul>
-
-    <div
-      <h3> Hotpot ingredients </h3>
-
-      <table>
-        <tr>
-          <td style="margin-left:40px">
-              <img src="Images/niurou.png" alt="Beef" title="Beef" height="150 "width="150"/>
-          </td>
-          <td style="margin-left:40px">
-              <img src="Images/yangrou.png" alt="Lamb" title="Lamb" height="150 "width="150"/>
-          </td>
-          <td style="margin-left:40px">
-              <img src="Images/maodu.png" alt="Maodu" title="Maodu" height="150 "width="150"/>
-          </td>
-          <td style="margin-left:40px">
-              <img src="Images/yachang.png" alt="Yachang" title="Yachang" height="150 "width="150"/>
-          </td>
-          <td style="margin-left:40px">
-              <img src="Images/xiangcaiwanzi.png" alt="Meatball" title="Meatball" height="150 "width="150"/>
-          </td>
-          <td style="margin-left:40px">
-              <img src="Images/tudou.png" alt="Potato" title="Potato" height="150 "width="150"/>
-          </td>
-          <td style="margin-left:40px">
-              <img src="Images/baicai.png" alt="Napa" title="Napa" height="150 "width="150"/>
-          </td>
-          <td style="margin-left:40px">
-              <img src="Images/ou.png" alt="Lotus Root" title="Lotus Root" height="150 "width="150"/>
-          </td>
-        </tr>
-      </table>
+    <div>
+        <h1 id="welcome"> WELCOME TO THE HOTPOT VENTURE</h1>
+        <hr color="burlywood">
+            
+        <ul>
+            <li><a href="index.htm">HOME</a></li>
+            <li><a href="recipe.htm">RECIPE</a></li>
+            <li><a href="restaurant.htm">RESTAURANTS</a></li>
+            <li><a href="contact.htm">CONTACT</a></li>
+            <li><a href="about.htm">ABOUT</a></li>
+            <li><a href="sitemap.htm">SITEMAP</a></li>
+        </ul>
+            
+        <hr color="burlywood">
     </div>
+
+
+    <h1 id="ingredients"> HOTPOT INGREDIENTS </h1>
+
+    <div>
+        <p style="font-weight:bold; font-size:24px; font-style:italic; color:burlywood">MEAT</p>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/DuckIntestine.png" alt="DuckIntestine" title="DuckIntestine" height="200" width="200"/>
+                </td>
+                <td>
+                    <img src="Images/BeefTripe.png" alt="BeefTripe" title="BeefTripe" height="200" width="200"/>
+                </td>
+                <td>
+                    <img src="Images/RibEye.png" alt="RibEye" title="RibEye" height="200" width="200"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Duck Intestine</td>
+                <td>Beef Tripe</td>
+                <td>Rib Eye</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="Images/CrabmeatStick.png" alt="CrabmeatStick" title="CrabmeatStick" height="200" width="200"/>
+                </td>
+                <td>
+                    <img src="Images/LuncheonPork.png" alt="LuncheonPork" title="LuncheonPork" height="200" width="200"/>
+                </td>
+                <td>
+                    <img src="Images/DuckBlood.png" alt="DuckBlood" title="DuckBlood" height="200" width="200"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Crab Meat</td>
+                <td>Lucheon Pork</td>
+                <td>Duck Blood</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <p style="font-weight:bold; font-size:24px; font-style:italic; color:burlywood">VEGETABLES</p>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/NapaCabbage.png" alt="NapaCabbage" title="NapaCabbage" height="200" width="200"/>
+                </td>
+                <td>
+                    <img src="Images/Spanich.png" alt="Spanich" title="Spanich" height="200" width="200"/>
+                </td>
+                <td>
+                    <img src="Images/EnokiMushroom.png" alt="EnokiMushroom" title="EnokiMushroom" height="200" width="200"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Napa Cabbage</td>
+                <td>Spanich</td>
+                <td>Enoki Mushroom</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="Images/Potato.png" alt="Potato" title="Potato" height="200" width="200"/>
+                </td>
+                <td>
+                    <img src="Images/Daikon.png" alt="Daikon" title="Daikon" height="200" width="200"/>
+                </td>
+                <td>
+                    <img src="Images/WinterMelon.png" alt="WinterMelon" title="WinterMelon" height="200" width="200"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Potato</td>
+                <td>Daikon</td>
+                <td>Winter Melon</td>
+            </tr>
+
+        </table>
+    </div>
+    
+
+</body>
+
+</html>
