@@ -5,7 +5,57 @@
         <meta charset="UTF-8">
         <title>ITSHOTPOT contact</title>
 
-        <link rel="stylesheet" href="CSS/contact.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+
+        <style type="text/css">
+
+            p{
+            font-size:16px;
+            text-align:center;
+            }
+            
+            #cu{
+            font-size:2em;
+            text-align:center;
+            padding-top:15px;
+            color:burlywood;
+            }
+
+            #button{
+            border-radius: 12px;
+            border: 2px solid burlywood;
+            }
+
+            #button:hover{
+            background-color: burlywood;
+            }
+
+            .bbb{
+            color:burlywood;
+            }
+        </style>
+
+        <script type="text/javascript">
+            
+            function validate(){
+                let myForm = document.getElementById ("form1");
+
+                let last_name = myForm.last_name.value;
+                let phone_number = myForm.phone_number.value;
+                let email = myForm.email.value;
+                let comments = myForm.comments.value
+
+                if ((last_name == "") || (phone_number == "") || (email == "") || (comments == "")) {
+                alert ("All Fileds must be filled in!");
+                }
+
+                else if (isNaN(phone_number)){
+                    alert("You did not enter a valid phone number!");
+                }
+                return false;
+            }
+        
+        </script>
    
 </head>
 
@@ -31,7 +81,7 @@
     
     <p>We are here to answer any questions you may have about hotpot. <br> Reach out to us and we will repond as soon as we can.</p>
 
-    <form method="post" action="mailto:xzhong3@babson.edu">
+    <form method="post" action="" id="form1">
 
         <p class="bbb">Name <br/><input type="text" name="last_name" maxlength="40" size="40">
         </p>
@@ -48,7 +98,7 @@
 
         
         <p>
-            <button id="button" type="submit" name="submit" value="submit"> SUBMIT</button>
+            <button id="button" type="submit" name="submit" value="submit" onclick="return validate()"> SUBMIT</button>
         </P>
 
     </form>

@@ -5,45 +5,11 @@
         <meta charset="UTF-8">
         <title>ITSHOTPOT homepage </title>
 
-        <style type="text/css">
-            body{
-                background-color:black;
-                color:white;
-                font-family: calibri;
-            }
-            
-            h1{
-                text-align: center;
-            }
+        <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 
+        <style type="text/css">
             p{
                 font-size:20px;
-            }
-
-            ul{
-                list-style-type: none;
-                text-align: center;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-
-            li{
-                display: inline;
-            }
-
-            li a{
-                color:white;
-                text-decoration: none;
-                padding:5px 5px;
-            }
-
-            li a:hover{
-                background-color: burlywood;
-            }
-
-            #welcome{
-                font-size:3em;
             }
 
             #esht{
@@ -62,8 +28,8 @@
             #map{
                 width:48%;
                 float:right;
-                padding-top:50px;
-                padding-left:50px;
+                margin-top:50px;
+                margin-left:50px;
             }
 
             #des1{
@@ -77,7 +43,7 @@
                 width: 385px;
             }
 
-            #hp2{
+            #hpimage{
                 width:500px;
                 margin-left:auto;
                 margin-right:auto;
@@ -87,12 +53,47 @@
             .bbb{
                 color:burlywood;
             }
-
+            #ccc{
+                margin-bottom: -200px;
+            }
         </style>
+
+
+        <script type="text/javascript">
+            var slides = new Array ("Images/hp2.jpg", "Images/hp3.jpg", "Images/hp4.jpg")
+            var counter = 0;
+            var i = 0;
+
+            function slideShow(){
+                let img = document.getElementById("hpimage");
+
+                if (i == slides.length){
+                    i = 0;
+                }
+
+                counter++;
+                img.src = slides[i];
+                i++;
+                setTimeout("slideShow()", 1500);
+            }
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#hide").click(function(){
+                $("audio").hide();
+                });
+            $("#show").click(function(){
+                $("audio").show();
+                });
+            });
+        </script>
+
 
 </head>
 
-<body>
+<body onload="slideShow()">
 
     <div>
         <h1 id="welcome"> WELCOME TO THE HOTPOT VENTURE</h1>
@@ -109,30 +110,32 @@
 
         <hr color="burlywood">
     </div>
+<div id="ccc">
+
 
     <p><img src="Images/hp1.jpg" alt="hotpot1" title="hotpot1" style="width:100%"></p>
     <h1 id="esht">EXPERIENCE SPICY <br>HOTPOT TOGETHER</h1>
-
-    
+</div>
+    <div>
     <h1 class="bbb">HISTORY</h1><br/>
 
     <div class="part">
         <p>At the end of Qing dynasty and the beginning of Republic of China, along the Changjiang River, some should be disposed food like beef tripe, chicken feet and duck blood are sold to lower class people, especially boat tracker, who are not rich enough to buy meals. Then these tripes, lungs, intestines are cut into pieces, placing in different little plate, if someone wants to buy it, then place it into hot boiling water along with different spicy sauce and seasonings.</p>
     </div>
-
+</div>
     <hr>
 
     <div class="part">
         <h1 class="bbb">MAJOR HOTPOT CITIES</h1>
+            <img id="map" src="Images/cities.jpg" usemap="#cities" alt="Map of cities" title="Clickable Map"/>
         <map name="cities">
-            <p><img id="map" src="Images/cities.jpg" usemap="#cities" alt="Map of cities" title="Clickable Map"/></p>
-            <area shape="rect" coords="1026, 1045, 1164, 1114"  href="https://en.wikipedia.org/wiki/Chongqing"  alt="chongqing" title="chongqing"/>
-            <area shape="rect" coords="942, 966, 1065, 1030"  href="https://en.wikipedia.org/wiki/Chengdu"  alt="chengdu" title="chengdu"/>
+            <area shape="rect" coords="204, 209, 233, 223"  href="https://en.wikipedia.org/wiki/Chongqing"  alt="chongqing" title="chongqing"/>
+            <area shape="rect" coords="187, 192, 213, 207"  href="https://en.wikipedia.org/wiki/Chengdu"  alt="chengdu" title="chengdu"/>
         </map>
 
 
         <h3 style="font-weight:bold; font-style:italic; font-size: 24px; color:burlywood">CHONGQING</h3>
-        <p>Chongqing, located in south-western region in China, is a megacity with over 30 million people.As a city in the mountains, it is surrounded by two rivers (Yangtze river and Jialing river), and has high-rises and buildings in graceful disorder. </p>
+        <p>Chongqing, located in south-western region in China, is a megacity with over 30 million people. As a city in the mountains, it is surrounded by two rivers (Yangtze river and Jialing river), and has high-rises and buildings in graceful disorder. </p>
 
         <hr id="hr1">
 
@@ -144,12 +147,16 @@
 
     <div>
         <p id="des1">The traditional hotpot style with modern hotpot concept: fresh ingredients with high quality soup base to ensure the best taste. </p>
-        <p><img id="hp2" src="Images/hp2.jpg" alt="hp2" title="hp2"></p>
+        <p><img id="hpimage" src="Images/hp2.jpg" alt="Slide Show of Hotpot" title="hp"></p>
     </div>
 
 
     <div id="audio">
         <audio controls><source src="BackgroundMusic.mp3" type="audio/mp3"></audio>
+        <br>
+        
+        <button id="hide">Hide Music</button>
+        <button id="show">Show Music</button>
     </div>
 
 </body>

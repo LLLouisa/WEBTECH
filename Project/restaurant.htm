@@ -5,45 +5,11 @@
         <meta charset="UTF-8">
         <title>ITSHOTPOT restaurants</title>
 
-        <style type="text/css">
-        body{
-            background-color:black;
-            color:white;
-            font-family: calibri;
-        }
-            
-        h1{
-            text-align: center;
-        }
+        <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 
+        <style type="text/css">
         p{
             text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        li {
-            display: inline;
-        }
-
-        li a{
-            color:white;
-            text-decoration: none;
-            padding:5px 5px;
-        }
-
-        li a:hover{
-            background-color: burlywood;
-        }
-
-        #welcome{
-            font-size:3em;
         }
 
         #restaurant{
@@ -62,18 +28,26 @@
             font-size: 20px;
         }
 
-        a#customer{
-            color:white;
-            text-decoration: underline;
+        #form1{
             text-align: center;
-            font-size: 30px;
-        }
-
-        a#customer:hover{
-            background-color: darkred;
         }
 
         </style>
+
+        <script type="text/javascript">
+            function changeColor(){
+                let f = document.getElementById("form1");
+                let colorChoice;
+
+                for (let i = 0; i < f.colors.length; i++) {
+                    if (f.colors[i].checked) {
+                        colorChoice = f.colors[i].value;
+                    }
+                }
+                f.style.backgroundColor = colorChoice;
+                return false;
+            }
+        </script>
 </head>
 
 <body>
@@ -134,6 +108,25 @@
             </td>
         </tr>
     </table>
+
+    <hr color="burlywood">
+
+    <form action="" method="post" id="form1">
+        <h2>Do not like the background color?</h2>
+        <h2>Click below to change it!</h2>
+        <h3>
+            <input type="radio" name="colors" value="Lightslategray" /> Light slate gray
+            <input type="radio" name="colors" value="Rosybrown" /> Rosybrown
+            <input type="radio" name="colors" value="Thistle" /> Thistle
+            <input type="radio" name="colors" value="Silver" /> Silver
+            <input type="radio" name="colors" value="Burlywood" /> Burlywood
+        </h3>
+        <p>
+            <input type="submit" name="submit" value="Change" onclick="return changeColor()" />
+            <input type="reset" name="Reset" value="Clear!" />
+        </p>
+    </form>
+
 </body>
 
 </html>

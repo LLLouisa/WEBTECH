@@ -5,46 +5,13 @@
         <meta charset="UTF-8">
         <title>ITSHOTPOT about </title>
 
-        <style type="text/css">
-        body{
-            background-color:black;
-            color:white;
-            font-family: calibri;
-        }
-            
-        h1{
-            text-align: center;
-        }
+        <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 
+        <style type="text/css">
+        
         p{
             font-size:16px;
             text-align:center;
-        }
-
-        ul {
-            list-style-type: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        li {
-            display: inline;
-        }
-
-        li a{
-            color:white;
-            text-decoration: none;
-            padding:5px 5px;
-        }
-
-        li a:hover{
-            background-color: burlywood;
-        }
-
-        #welcome{
-            font-size:3em;
         }
 
         #louisa{
@@ -52,17 +19,17 @@
             text-align:center;
             padding-top:15px;
             color:burlywood;
+            position: absolute;
         }
 
         #image{
-            width:280px;
             float:right;
             padding-top:5px;
             padding-left:20px;
         }
 
         div#part{
-            padding: 10px 300px 30px 300px;
+            padding: 100px 300px 30px 300px;
             line-height: 1.6;
         }
 
@@ -71,9 +38,45 @@
         }
 
         </style>
+
+        <script type="text/javascript">
+            function enlarge(x){
+            let i = document.getElementById(x);
+            let w = i.width;
+            i.width = w * (1 + 0.2);
+            };
+    
+            function shrink(y){
+            let i = document.getElementById(y);
+            let w = i.width;
+            i.width = w / (1 + 0.2);
+            }
+
+            var counter = 0;
+            var messageList = new Array ("THIS IS LOUISA ZHONG", "LOVE EATING ", "LOVE COOKING", "ENJOY LIFE :)");
+            var p = 300; k = 0;
+
+            function doScroll(){
+                document.getElementById("louisa").style.left = p + "px";
+                if (p > 700){
+                    p = 300;
+                    k++;
+                    if (k == messageList.length){
+                        k = 0;
+                    }
+                    document.getElementById("louisa").innerHTML = messageList[k];
+                    document.getElementById("louisa").style.left = p +"px";
+                }
+                else{
+                    p = p + 5;
+                }
+                setTimeout("doScroll()", 200);
+            }
+        </script>
+
 </head>
 
-<body>
+<body onload= "doScroll()">
     <div>
         <h1 id="welcome"> WELCOME TO THE HOTPOT VENTURE</h1>
         <hr color="burlywood">
@@ -90,10 +93,10 @@
         <hr color="burlywood">
     </div>
 
-    <h1 id="louisa">About Louisa</h1>
+    <h1 id="louisa">ABOUT LOUISA</h1>
 
     <div id="part">
-        <img id="image" src="Images/selfie.png" alt="selfie" title="selfie">
+        <img id="image" src="Images/selfie.png" alt="selfie" title="selfie" width="280" onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)">
         <p id="des">
             This is Louisa! <br>
             Born and raised in the hot pot city "Chongqing", I regarded myself as a foodie and enjoy different cuisines all over the world. Among all dishes, my favorite one is authentic spicy hotpot!!!<br>
