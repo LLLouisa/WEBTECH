@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Web Technologies - Your Name </title>
+
+        <link rel="stylesheet" type="text/css" href="CSS/CS06-InClass-2.css" />
+
+        <style type="text/css">
+            img{
+                border:4px solid red;
+                margin: top right bottom left;
+                padding: top right bottom left;
+                float: left / right;
+                position: fixed / relative / absolute; 
+                clear: both / none / left / right;
+            }
+
+            body, h1, p, hr, span{
+                color:silver;
+                background-color: bisque;
+                font-family: Arial;
+                font-size: 1.5em;
+                font-style: italic;
+                font-weight: bold;
+                text-decoration: underline;
+                text-align: left / right / center;
+                margin: top right bottom left;
+                padding: top right bottom left;
+                
+                background: url(Images/music.gif) center fixed repeat-x;
+                text-transform:capitalize / uppercase / lowercase;
+                position: fixed / relative / absolute;
+                top:-88px;
+                z-index:1;
+            }
+            
+            ul{
+                list-style-type: square;
+                list-style-image:url(Images/smiley.gif);
+            }
+
+            a:hover{background-color: orange;}
+            #id{color:silver}
+            .class{color:silver}
+
+
+            
+        </style>
+
+        <script type="text/javascript">
+        
+
+        var y = 10;
+        document.getElementById("demo").innerHTML = y;
+
+        function calculate(){
+            let x = document.getElementById("AAA").innerHTML;
+            x.style.color="red";
+
+        
+        function enlarge_Img() {
+                let myimg = document.getElementById("z");
+                let w = myimg.style.width;
+                w = parseInt(w);
+                w = w + 30;
+                myimg.style.width = w + "px";
+            }
+        // <img id="z" src="" alt="" title="" style="width:30px" onmouseover="enlarge_Img()" />
+        
+
+        function clean(){
+                document.getElementById("userInput").innerHTML = "";
+                document.getElementById("result").innerHTML = "";
+                document.getElementById("image1").src="";
+            }
+
+
+            let r = [Math.floor((Math.random() * 最大值) + 最小值)];
+
+
+        //textAlign
+        // backgroundColor
+        // fontFamily
+        // fontWeight
+
+        // +Addition
+        // -Subtraction
+        // *Multiplication
+        // / Division
+        // ++increment by 1
+        // --decrement by 1
+
+            if (x=="")
+                alert("");
+
+    </script>
+
+</head>
+
+<body>
+        <h></h>
+        <hr>
+        <br>
+        
+        <p style="font-size: small; color: blue"><img id="z" src="" alt="" title="" style="width:30px" width="100" height="80" onmouseover="enlarge_Img()" /></p>
+
+        <a href="low.htm">Low.htm</a>
+        <a href="Q2.htm#criticism">Retina Play</a>         <a id="criticism"><h2>Criticism</h2></a>
+        This is <a href="http://www.babson.edu" target="_blank">Babson.</a>
+
+        <map name="Middlesex">
+            <area shape="rect" coords="301, 351, 330, 383"  href="http://www.wellesleyma.gov"  alt="Wellesley" title="Wellesley"target="_blank" />
+                
+            <area shape="rect" coords="338,314,360,373" href="  http://www.newtonma.gov" alt="Newton"  title="Newton" target="_blank"/>
+               
+            <img src="Images/Middlesex.gif" usemap="#Middlesex" alt="Map of Middlesex" title="Clickable Map"/>
+        </map>
+
+
+
+        <ul type="square">
+            <li> AAA
+                <ol type="i">
+                    <li> a </li>
+                    <li> b </li>
+                </ol>
+            </li>
+            <li> BBB
+                <ol>
+                    <li> c </li>
+                    <li> d </li>
+                </ol>
+            </li>
+        </ul>
+
+        <table>SEE CS06-InClass-Table-1</table>
+
+
+        <form method="post" action="mailto:xzhong3@babson.edu">SEE CS08-InClass</form>
+
+
+</body>
+
+</html>

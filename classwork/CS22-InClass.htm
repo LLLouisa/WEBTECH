@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Web Technologies - CS22</title>
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <style type="text/css">
+            #circle{
+                height:150px;
+                width:150px;
+                background-color: brown;
+                border-radius:50%;
+                margin:10px;
+            }
+
+            #square{
+                height:150px;
+                width:150px;
+                background-color:navy;
+                margin:10px;
+                text-align:center;
+            }
+        </style>
+
+</head>
+        <div id="circle"></div>
+        <div id="square"></div>
+
+        <div class="ui-widget">
+            <label for="tags">Tags: </label>
+            <input id="tags">
+        </div>
+
+        <script type="text/javascript">
+            // $("#circle").click(function(){
+            //     $("#circle").css("background-color", "blue");
+            //     $("#square").text("It's not me!");
+            // });
+
+            $("#square").dbclick(function(){
+                $("ciecle").css("background-color","yellow");
+                $(this).text("");
+                // alert("a square was clicked!");
+            });
+
+            $("#circle").draggable();
+
+            var availableTags = [
+    "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+            
+        </script>
+<body>
+ 
+</body>
+
+</html>
